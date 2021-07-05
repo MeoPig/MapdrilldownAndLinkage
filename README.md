@@ -1,6 +1,8 @@
 # MapdrilldownAndLinkage
 本项目采用Flask框架，基于echarts展示地图三级下钻(省、市、县)以及各种图表之间的联动操作。
-
+运行软件：Pycharm
+运行环境：python3.8
+第三方包: flask,pymysql,utils
 总效果图：
 ![image](img/img1.png)
 

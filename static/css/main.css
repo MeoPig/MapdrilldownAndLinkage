@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	background: #fffdfd;
+    overflow-x: hidden;
+}
+
+
+#map {
+	position: absolute;
+	width: 60%;
+	height: 72%;
+	top: 1%;
+	left: 20%;
+	/* box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2); */
+}
+#pie {
+	position: absolute;
+	width: 30%;
+	height: 28%;
+	top: 72%;
+	left: 1%;
+	/* box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2); */
+}
+#bar {
+	position: absolute;
+	width: 40%;
+	height: 28%;
+	top: 72%;
+	left: 25%;
+	/* box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2); */
+}
+#tabl{
+    position: absolute;
+	width: 30%;
+	height: 28%;
+	top: 72%;
+	right: 1%;
+    overflow-y:scroll;
+    margin:0 auto;
+	/* box-shadow: 0px 2px 14px rgba(34, 25, 25, 0.2); */
+
+}
+
+/* 此处是设置自动匹配横屏，以适应手机显示 使用下面定义的id:gyroContain   */
+@media screen and (orientation: portrait) {
+    html{
+        width : 100vmin;
+        height : 100vmax;
+    }
+    body{
+        width : 100vmin;
+        height : 100vmax;
+    }
+    #gyroContain{
+        width : 100vmax;
+        height : 100vmin;
+        transform-origin: top left;
+        transform: rotate(90deg) translate(0,-100vmin);
+    }
+  }
+@media screen and (orientation: landscape) {
+    html{
+        width : 100vmax;
+        height : 100vmin;
+    }
+    body{
+        width : 100vmax;
+        height : 100vmin;
+    }
+    #gyroContain{
+        width : 100vmax;
+        height : 100vmin;
+    }
+}

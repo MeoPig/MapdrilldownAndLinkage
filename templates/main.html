@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>生源分布</title>
+		<script src="../static/js/jquery.min.js">
+		</script>
+		<script src="../static/js/echarts.min.js"></script>
+		<script src="../static/js/china.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $(document).bind("contextmenu",function(e){
+			        return false;
+			    });
+			});
+		</script>
+
+		<link href="../static/css/main.css" rel="stylesheet"/>
+		<style>			
+		</style>
+	
+	</head>
+	<body>
+		<div id="map"> </div>
+        <div id="pie"> </div>
+        <div id="bar"> </div>
+        <div id="tabl"> </div>
+        <script src="../static/js/all-province.js"></script>
+		<script src="../static/js/citymap.js"></script>
+		<script src="../static/js/pie.js"></script>
+        <script src="../static/js/bar.js"></script>
+        <script src="../static/js/change-map.js"></script>
+	</body>
+</html>
